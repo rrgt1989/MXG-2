@@ -1,0 +1,141 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    margin: 0;
+    overflow: auto;  /* Allow scrolling */
+}
+
+/* Master mode styles */
+.master-mode {
+    background-color: #d9534f;
+}
+
+/* Container styles */
+.container {
+    background-color: #fff;
+    padding: 15px;  /* Reduced padding for better fit */
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 100%;
+    max-width: 400px;  /* Width suitable for portrait mode */
+    max-height: 80%; /* Height suitable for portrait mode */
+    box-sizing: border-box; /* Ensure padding and border are included in width/height */
+    overflow: hidden; /* Hide any overflow */
+}
+
+/* Center the difficulty buttons and play button */
+#difficultyOptions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Styles for the difficulty buttons */
+#difficultyOptions button {
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    font-size: 18px;  /* Adjusted font size for buttons */
+    width: 100%;  /* Full-width buttons */
+    max-width: 300px;  /* Max width for buttons */
+}
+
+#difficultyOptions button:hover {
+    background-color: #0056b3;
+}
+
+/* Center the Let's Go button */
+#playButton {
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    background-color: #28a745;
+    color: #fff;
+    cursor: pointer;
+    font-size: 18px;  /* Adjusted font size for the button */
+    width: 100%;  /* Full-width button */
+    max-width: 300px;  /* Max width for the button */
+    margin-top: 20px;  /* Added margin for spacing */
+    margin-left: auto;
+    margin-right: auto; /* Center the button horizontally */
+    display: block; /* Ensure it's centered with block display */
+}
+
+#playButton:hover {
+    background-color: #1e7e34;
+}
+
+/* Styles for the GIF images */
+.gif-image {
+    margin-top: 20px;  /* Space between the GIF and the Let's Go button */
+    width: 100%;  /* Full width */
+    max-width: 300px;  /* Max width to prevent overflow */
+    border-radius: 8px;  /* Rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);  /* Shadow effect */
+    margin-left: auto;  /* Center horizontally */
+    margin-right: auto; /* Center horizontally */
+}
+
+.quiz-gif {
+    width: 50%;  /* Set width to 50% */
+    height: auto;  /* Maintain aspect ratio */
+    max-width: 200px;  /* Max width to prevent overflow */
+    border-radius: 8px;  /* Rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);  /* Shadow effect */
+    margin: 20px auto;  /* Center horizontally and add vertical space */
+}
+
+/* Styles for the question and choices */
+.question {
+    font-size: 24px;  /* Adjusted font size */
+    margin-bottom: 15px;
+}
+
+.choices {
+    display: flex;
+    flex-direction: column;
+    align-items: center;  /* Center buttons horizontally */
+    gap: 10px;  /* Adjusted gap between buttons */
+    margin-bottom: 15px;
+}
+
+.choice-button {
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    font-size: 18px;  /* Adjusted font size for buttons */
+    width: 100%;  /* Full-width buttons */
+    max-width: 300px;  /* Max width for buttons */
+}
+
+.choice-button:hover {
+    background-color: #0056b3;
+}
+
+.result {
+    margin-top: 15px;
+    font-size: 20px;  /* Adjusted font size for result */
+}
+
+#score {
+    font-size: 20px;  /* Adjusted font size for the score */
+}
+
+button {
+    width: 100%;  /* Full-width buttons */
+    max-width: 200px;  /* Max width for buttons */
+    margin-top: 10px;
+}

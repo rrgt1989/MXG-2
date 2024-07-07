@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Multiplication Table Question</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="startPage" class="container">
+        <h1>Multiplication Table: Memory Teaser</h1>
+        <div id="difficultyOptions">
+            <button onclick="selectDifficulty('beginner')">Beginner</button>
+            <button onclick="selectDifficulty('master')">Master</button>
+        </div>
+        <img id="gifImage" src="assets/StartGIF.gif" alt="Game Animation" class="gif-image" style="display: none;">
+        <button id="playButton" onclick="startQuiz()" style="display: none;">Let&#39;s Go</button>
+    </div>
+
+    <div id="quizPage" class="container" style="display: none;">
+        <img id="quizGif" src="assets/QuizGIF.gif" alt="Quiz Animation" class="quiz-gif">
+        <div class="question" id="question"></div>
+        <div class="choices" id="choices"></div>
+        <div class="result" id="result"></div>
+    </div>
+
+    <div id="endPage" class="container" style="display: none;">
+        <h1>Quiz Over!</h1>
+        <div id="score"></div>
+        <button onclick="restartQuiz()">Play Again</button>
+    </div>
+
+    <audio id="backgroundMusic" loop>
+        <source src="audio/Music.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <audio id="clickSound">
+        <source src="audio/Clicksound1.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <audio id="correctSound">
+        <source src="audio/correct.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <audio id="wrongSound">
+        <source src="audio/wrong.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
